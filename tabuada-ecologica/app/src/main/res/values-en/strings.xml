@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tabuada-Ecologica</string>
+    <string name="btnConferir">Check Result</string>
+    <string name="msgVencedor">You win!</string>
+</resources>
