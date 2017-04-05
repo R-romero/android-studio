@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pizzaria</string>
+
+    <string-array name="formaPagto">
+        <item>Débito</item>
+        <item>Crédito</item>
+        <item>Dinheiro</item>
+    </string-array>
+
+    <string name="chkBorda">Borda Recheada</string>
+
+</resources>

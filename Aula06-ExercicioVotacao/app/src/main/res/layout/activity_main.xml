@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="votacao.fiap.com.br.aula06_exerciciovotacao.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgBrasao"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/brasao"
+        android:layout_centerHorizontal="true"  />
+
+   <RadioGroup
+       android:id="@+id/rgCargo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/imgBrasao"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true"  >
+       <RadioButton
+           android:id="@+id/rbPrefeito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblPrefeito"
+        />
+       <RadioButton
+           android:id="@+id/rbVereador"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/lblVereador"  />
+   </RadioGroup>
+
+    <Spinner
+        android:id="@+id/listaPrefeitoVereador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgCargo"
+        android:entries="@array/listaPrefeito"
+        >
+    </Spinner>
+
+   <Button
+       android:id="@+id/btnVoltar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/listaPrefeitoVereador"
+       android:text="@string/lblVotar"
+       android:onClick="registraCandidato" />
+
+    <TextView
+        android:id="@+id/txtSelecaoPrefeito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnVoltar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/txtSelecaoVereador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSelecaoPrefeito"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+
+</RelativeLayout>

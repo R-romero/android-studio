@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Aula06- Exercicio Votacao</string>
+    <string name="lblPrefeito">Prefeito</string>
+    <string name="lblVereador">Vereador</string>
+    <string name="lblVotar">Votar</string>
+
+    <string-array name="listaPrefeito">
+
+    </string-array>
+
+    <string-array name="listaVereador">
+
+    </string-array>
+
+</resources>
+
+
