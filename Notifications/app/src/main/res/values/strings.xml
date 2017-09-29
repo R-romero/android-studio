@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Notifications</string>
+
+    <string-array name="lstPresente">
+        <item>Camisa</item>
+        <item>Calça</item>
+        <item>Carteira</item>
+    </string-array>
+</resources>
